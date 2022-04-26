@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styl.css" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+    integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js" integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <title>MY trello project</title>
+  </head>
+  <body>
+
+
+    <div id="menu_droit">
+
+      <div id="btn_archive">Archiver</div>
+      <div id="btn_desarchive">Desarchiver</div>
+
+      <div id="span_right">left </div>
+      <div id="span_left">right</div>
+    </div>
+    <main id="main"> 
+      <div class="divmain">
+        <p id="p_ouverture"> cliquer par ici</p>
+        <button id="ouverture"><img src="add-icon.png" alt=""></button>
+        <button id="hand"><img src="hand.png" alt="" style="margin-top:5%;"></button>
+      </div>
+
+    </main>
+
+    
+   <div id="modal_container">
+   <form id="form"  method="POST">
+      <div class="modal">
+      <div class="modal_up"><h3>Nouvelle tache</h3><button  type="button" id="btn_x"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+      <div class="modal_down">
+        <div class="para">
+            <p class="pp">Remplir la nouvele tache</p>
+            <small>error_message</small>
+        </div>
+        <div id="area"><textarea id="textarea" name="textarea" ></textarea></div>  
+          <div class="div_input">
+         <div id="inputEl">
+          <label>Date:</label>
+          <input type="date" id="date"  name="date"/>
+          <small>error_message</small>
+         </div>
+         <div id="inputEl">
+          <label>heure de debut</label>
+          <input type="time" id="hdebut" name="datedebut" />
+          <small>error_message</small>
+         </div>
+         <div id="inputEl">
+          <label>Heure de fin</label>
+          <input type="time" id="datefin"  name="df" />
+          <small>error_message</small>
+         </div>
+  
+          <div id="submit_bnt"><button type="button" id="btn_submit" >SUIVANT</button></div>
+        </div>
+
+   </div>
+    
+    </div>
+   </form>
+      <!-- <div class="modalalert"> <h2 
+      id="p_alert">l'heure de debut doit etre supieur à l'heure finale</h2><button id="btn_ok">OK</button>
+    </div> -->
+   </div>
+    <script src="script.js"></script>
+  </body>
+</html>
